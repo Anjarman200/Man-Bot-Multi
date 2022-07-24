@@ -1,11 +1,11 @@
 {
   "name": "Man-Bot-Md",
-  "version": "13.0.0",
-  "description": "Man B0t Multi Device, Only update in YouTube ANJARMAN20,
-  "main": "Man.js",
+  "version": "12.0.0",
+  "description": "M4n B0t Multi Device, Only update in YouTube Anjarman20",
+  "main": "Anjar.js",
   "license": "MIT",
   "scripts": {
-    "start": "node Man.js"
+    "start": "node Anjar.js"
    },
   "keywords": [
     "whatsapp",
@@ -19,9 +19,8 @@
   "dependencies": {
     "@adiwajshing/baileys": "github:adiwajshing/baileys",
     "@adiwajshing/keyed-db": "^0.2.4",
-    "@bochilteam/scraper": "^2.0.0",
-    "@vitalets/google-translate-api": "^7.0.0",
     "awesome-phonenumber": "^2.64.0",
+    "@vitalets/google-translate-api": "^7.0.0",
     "amethyste-api": "^1.1.5",
     "awesome-phonenumber": "^2.64.0",
     "axios": "^0.24.0",
@@ -29,7 +28,6 @@
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0-rc.10",
     "child_process": "^1.0.2",
-    "emoji-api": "^2.0.1",
     "fetch": "^1.1.0",
     "figlet": "^1.5.2",
     "file-type": "^16.5.3",
