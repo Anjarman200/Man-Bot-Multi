@@ -1,3 +1,17 @@
+exports.AddstikOk = (q, a, b, prefix, command) =>{
+	return`Sukses Menambahkan ${q} Ke Dalam Database ${a}\n\nCek dengan cara ${prefix}${b}`
+	}
+	
+exports.AddstikOk_ = (a,b) =>{
+	return`Durasi ${a} detik, yaitu durasi maksimal ${b} yang bisa bot simpan ke dalam database`
+	}
+exports.Addvn = () =>{
+	return`Tunggu sebentar, saya akan mencoba untuk mengupload media ini ke database`
+	}
+	
+exports.ListStik = (a) =>{
+	return`_Untuk mengambil ${a} silahkan kirim pesan sesuai dengan list ${a} yang ada di atas_`
+	}
 exports.noAbsen = () =>{
 return `❌ Tidak ada absen berlangsung di group ini !`
 }
@@ -42,7 +56,7 @@ exports.ReplyMsg = () =>{
 	return`Reply Message Yang Ingin Disave Di Database`
 	}
 exports.NoMsg = (prefix, command) =>{
-	return`Example : ${prefix + command} nama file`
+	return`Contoh : ${prefix + command} nama file`
 	}
 exports.AdMsg = (text) => {
     return `'${text}' telah terdaftar di list pesan`
@@ -152,54 +166,54 @@ exports.DoneExif = (packname, author) => {
     return `Exif Berhasil Diubah Menjadi\n\nPackname : ${packname}\nAuthor : ${author}`
 }
 exports.NoTeksOne = (prefix, command) => {
-    return `Kirim perintah ${prefix + command} *teks*\n\nExp : ${prefix + command} WhatsApp Bot`
+    return `Kirim perintah ${prefix + command} *teks*\n\nContoh : ${prefix + command} WhatsApp Bot`
 }
 exports.NoTeksTwo = (prefix, command) => {
-    return `Kirim perintah ${prefix + command} *teks 1|teks 2*\n\nExp : ${prefix + command} WhatsApp|Bot`
+    return `Kirim perintah ${prefix + command} *teks 1|teks 2*\n\nContoh : ${prefix + command} WhatsApp|Bot`
 }
 exports.OffNsfw = () => {
     return `Fitur nsfw belum di aktifkan`
 }
 exports.CoverBanLol = (prefix, command) => {
-    return `Ex: ${prefix + command} nama|heroes\nUsage: ${prefix + command} zeeone|jinx7`
+    return `Contoh: ${prefix + command} nama|heroes\nUsage: ${prefix + command} zeeone|jinx7`
 }
 exports.coverbannerlol = (style) => {
     return `*Heroes Yg Kamu Masukkan Salah*\n\n_Berikut list heroes yg benar, Total_ *${style}* _heroes_\n\n`
 }
 exports.pubglogomaker = (prefix, command) => {
-    return `Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} zeeone|women`
+    return `Contoh: ${prefix + command} nama|style\nUsage: ${prefix + command} zeeone|women`
 }
 exports.pubglogomaker_ = (style) => {
     return `*Style Yg Kamu Masukkan Salah*\n\n_Berikut list style yg benar, Total_ *${style}* _style_\n\n`
 }
 exports.colorfulpubg = (prefix, command) => {
-    return `Ex: ${prefix + command} nama|color\nUsage: ${prefix + command} zeeone|gold`
+    return `Contoh: ${prefix + command} nama|color\nUsage: ${prefix + command} zeeone|gold`
 }
 exports.colorfulpubg_ = (style) => {
     return `*Color Yg Kamu Masukkan Salah*\n\n_Berikut list color yg benar, Total_ *${style}* _color_\n\n`
 }
 exports.astronotspace = (prefix, command) => {
-    return `Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} zeeone|anubis`
+    return `Contoh: ${prefix + command} nama|style\nUsage: ${prefix + command} zeeone|anubis`
 }
 exports.wallpaperaov = (prefix, command) => {
-    return `Ex: ${prefix + command} nama|heroes\nUsage: ${prefix + command} zeeone|allain`
+    return `Contoh: ${prefix + command} nama|heroes\nUsage: ${prefix + command} zeeone|allain`
 }
 exports.maketeamlogo = (style, style2, prefix, command) => {
-    return `Ex: ${prefix + command} nama|${style}\nUsage: ${prefix + command} zeeone|${style2}`
+    return `Contoh: ${prefix + command} nama|${style}\nUsage: ${prefix + command} zeeone|${style2}`
 }
 
 exports.MaketeamlogoT = (a, b, c, d, e, f, g, h) => {
-    return `Ex: ${g + h} ${a}|${b}|${c}\nUsage: ${g + h} ${e}|${f}|${d}`
+    return `Contoh: ${g + h} ${a}|${b}|${c}\nUsage: ${g + h} ${e}|${f}|${d}`
 }
 exports.maketeamlogo_ = (style, style2) => {
     return `*${style2} Yg Kamu Masukkan Salah*\n\n_Berikut List ${style2} Yg Benar, Total_ *${style}* _${style2}_\n\n`
 }
 
 exports.KisahNabi = (prefix, command, style) => {
-    return `Exp : ${prefix + command} ${style}`
+    return `Contoh : ${prefix + command} ${style}`
 }
 exports.quran2 = (prefix, command, juz , brp) => {
-    return `Exp : ${prefix + command} ${juz}\nUsage: ${prefix + command} ${brp}`
+    return `Contoh : ${prefix + command} ${juz}\nUsage: ${prefix + command} ${brp}`
 }
 
 exports.quran3 = (prefix, command, surah , ayat, brp, brp2) => {
@@ -325,9 +339,9 @@ exports.TrLate = (prefix, command) => {
     return `Contoh :
 
 1. Kirim perintah ${prefix + command} *kode bahasa* *teks*
-	• Exp : ${prefix + command} id halo
+	• Contoh : ${prefix + command} id halo
 2. Reply chat dengan caption ${prefix + command} *kode bahasa*
-	• Exp : ${prefix + command} id halo
+	• Contoh : ${prefix + command} id halo
 Daftar bahasa yang di dukung : https://cloud.google.com/translate/docs/languages`
 }
 exports.Addlist = () => {
@@ -340,7 +354,7 @@ exports.Addlist__ = (arg) => {
     return `List respon dengan key : *${arg}* sudah ada di group ini.`
 }
 exports.AddlistDone = (arg) => {
-    return `Sukses set list message dengan key : *${arg}*`
+    return `Sukses set list message dengan key : *${arg}*\n\nNote : Tunggu beberapa menit jika list tidak berubah`
 }
 exports.Dellist = () => {
     return `Belum ada list message di database`
@@ -358,7 +372,7 @@ exports.ListUp = (key) => {
     return `Maaf, untuk key *${key}* belum terdaftar di group ini`
 }
 exports.UpList = (key) => {
-    return `Sukses update list message dengan key : *${args1}*`
+    return `Sukses update list message dengan key : *${key}*\n\nNote : Tunggu beberapa menit jika list tidak berubah`
 }
 exports.Anonymous = (pushname, prefix) => {
     return `Hai ${pushname} Selamat Datang di Anonymous Chat\n\nKetik ${prefix}start untuk mencari Teman Chat anda, atau bisa pencet tombol Search dibawah`
@@ -390,7 +404,19 @@ exports.AnonSearch = () => {
 exports.NoAnon = () => {
     return `⚠️ Kamu belum pernah memulai chat!`
 }
+exports.NoAudRep = (prefix, command) => {
+    return `Balas audio yang ingin diubah dengan caption *${prefix + command}*`
+}
 
+exports.NoTagBan = (prefix, command) => {
+    return `Contoh penggunaan :\n${prefix + command} 62938828728992 \natau\n${prefix + command} @tagmember`
+}
+exports.getBan = () => {
+    return `⚠️ Mohon maaf nomor kamu telah di banned oleh owner`
+}
+exports.Addstik = (prefix, command, t) => {
+    return `Reply ${t} dengan caption ${prefix + command} text\n\nExample : ${prefix + command} bot`
+}
 exports.AllFitur = () => {
     return `\n_Semua fitur bot_`
 }
@@ -471,6 +497,12 @@ exports.TobatBro = () => {
 }
 exports.MauJualan = () => {
     return `\n_Fitur untuk berjualan_`
+}
+exports.Maustorage = () => {
+    return `\n_Fitur untuk menyimpan stiker, audio, foto dan video_`
+}
+exports.MauChanger = () => {
+    return `\n_Fitur untuk mengubah suara audio / vn_`
 }
 exports.GadaChat = () => {
     return `\n_Fitur untuk melakukan chat random_`
@@ -587,23 +619,18 @@ saya ${botname}, bot ini adalah Beta Multi-Device Whatsapp.
 exports.listMenu = (time, salam, pushname, prefix) => {
     return `*Selamat ${salam} ${pushname}*
 *⌚Time Server : ${time}*
-*📚 List-Menu Man-Bot-MD :*
+*📚 List-Menu Alphabot-Md :*
 
 ╭─❒ 「 Bot Info 」 
 ├ ${prefix}owner
 ├ ${prefix}rules
-├ ${prefix}sc
 ├ ${prefix}ping
 ├ ${prefix}runtime
 ├ ${prefix}botstatus
-╰❒ ${prefix}donate
+╰❒ ${prefix}
 
 
 ╭─❒ 「 Owner 」 
-├ < evaluate
-├ > evaluate
-├ $ exec
-├ => exec
 ├ ${prefix}setmenu [query]
 ├ ${prefix}setmenu templateLocation
 ├ ${prefix}setmenu templateTenor
@@ -672,13 +699,16 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}infochat
 ├ ${prefix}setdesk [text]
 ├ ${prefix}setppgrup [reply image]
-├ ${prefix}antilink [on/off]
 ├ ${prefix}revoke
 ├ ${prefix}leave
 ├ ${prefix}add [62***]
 ├ ${prefix}kick @tag
 ├ ${prefix}leave
 ├ ${prefix}linkgc
+├ ${prefix}welcome [on/off]
+├ ${prefix}goodbye [on/off]
+├ ${prefix}nsfw [on/off]
+├ ${prefix}antilink [on/off]
 ├ ${prefix}take packname|author
 ├ ${prefix}group [open/close]
 ├ ${prefix}tagall [text]
@@ -715,6 +745,8 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 
 
 ╭─❒ 「 Converter 」
+├ ${prefix}emoji [😭]
+├ ${prefix}emojimix [😭+💩]
 ├ ${prefix}toaudio [video]
 ├ ${prefix}tomp3 [video]
 ├ ${prefix}tovn [video]
@@ -876,84 +908,100 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}dance
 ╰❒ ${prefix}cringe
 
+╭─❒ 「 Voice Change Menu 」
+├ ${prefix}bass
+├ ${prefix}blown
+├ ${prefix}deep
+├ ${prefix}earrape
+├ ${prefix}fast
+├ ${prefix}fat
+├ ${prefix}nightcore
+├ ${prefix}reverse
+├ ${prefix}robot
+├ ${prefix}slow
+├ ${prefix}smooth
+╰❒ ${prefix}tupai
+
+╭─❒ 「 Storage Menu 」
+├ ${prefix}addvn
+├ ${prefix}listvn
+├ ${prefix}addimage
+├ ${prefix}listimage
+├ ${prefix}addvideo
+├ ${prefix}listvideo
+├ ${prefix}addstik
+╰❒ ${prefix}liststik
+
 ╭─❒ 「 Nsfw & Sfw 」
-├ ${prefix}ahegao
-├ ${prefix}ass
-├ ${prefix}bdsm
+├ ${prefix}cuddle
+├ ${prefix}feed
+├ ${prefix}foxgirl
+├ ${prefix}kemonomimi2
+├ ${prefix}woof
+├ ${prefix}holo2
+├ ${prefix}hug
+├ ${prefix}kiss
+├ ${prefix}lizard
+├ ${prefix}meowi
+├ ${prefix}neko2
+├ ${prefix}pat
+├ ${prefix}poke
+├ ${prefix}slap
+├ ${prefix}tickle
+├ ${prefix}baka
+├ ${prefix}smug
+├ ${prefix}neko_sfw
+├ ${prefix}hentai
+├ ${prefix}hentai_gif
+├ ${prefix}spank
 ├ ${prefix}blowjob
+├ ${prefix}cumarts
+├ ${prefix}eroyuri
+├ ${prefix}eroneko
+├ ${prefix}erokemonomimi
+├ ${prefix}erokitsune
+├ ${prefix}ero
+├ ${prefix}feet
+├ ${prefix}erofeet
+├ ${prefix}feetgif
+├ ${prefix}femdom
+├ ${prefix}futanari
+├ ${prefix}holoero
+├ ${prefix}holo
+├ ${prefix}keta
+├ ${prefix}kitsune
+├ ${prefix}kemonomimi
+├ ${prefix}pussyart
+├ ${prefix}pussywankgif
+├ ${prefix}girl_solo
+├ ${prefix}girl_solo_gif
+├ ${prefix}tits
+├ ${prefix}trap
+├ ${prefix}yuri
+├ ${prefix}avatar2
+├ ${prefix}anal
+├ ${prefix}bj
+├ ${prefix}boobs
+├ ${prefix}classic
+├ ${prefix}cumsluts
+├ ${prefix}kuni
+├ ${prefix}lesbian
+├ ${prefix}neko
+├ ${prefix}neko_gif
+├ ${prefix}ahegao
+├ ${prefix}bdsm
 ├ ${prefix}cuckold
 ├ ${prefix}cum
-├ ${prefix}ero
-├ ${prefix}femdom
 ├ ${prefix}foot
 ├ ${prefix}gangbang
 ├ ${prefix}glasses
 ├ ${prefix}jahy
-├ ${prefix}manga
 ├ ${prefix}masturbation
-├ ${prefix}neko
+├ ${prefix}nsfw_neko
 ├ ${prefix}orgy
 ├ ${prefix}panties
-├ ${prefix}pussy
 ├ ${prefix}tentacles
 ├ ${prefix}thighs
-├ ${prefix}yuri
-├ ${prefix}feet
-├ ${prefix}lewdkemo
-├ ${prefix}woof
-├ ${prefix}gasm
-├ ${prefix}solo
-├ ${prefix}8ball
-├ ${prefix}goose
-├ ${prefix}avatar
-├ ${prefix}hololewd
-├ ${prefix}gecg
-├ ${prefix}holo
-├ ${prefix}fox_girl
-├ ${prefix}tits
-├ ${prefix}eroyuri
-├ ${prefix}holoyero
-├ ${prefix}lizard
-├ ${prefix}keta
-├ ${prefix}eron
-├ ${prefix}erok
-├ ${prefix}kemonomimi
-├ ${prefix}cum_jpg
-├ ${prefix}nsfw_avatar
-├ ${prefix}erofeet
-├ ${prefix}meow
-├ ${prefix}wallpaper
-├ ${prefix}waifu
-├ ${prefix}trap
-├ ${prefix}lewd
-├ ${prefix}pussy_jpg
-├ ${prefix}futanari
-├ ${prefix}lewdk
-├ ${prefix}solog
-├ ${prefix}smug
-├ ${prefix}cum
-├ ${prefix}slap
-├ ${prefix}les
-├ ${prefix}erokemo
-├ ${prefix}bj
-├ ${prefix}pwankg
-├ ${prefix}pat
-├ ${prefix}poke
-├ ${prefix}feed
-├ ${prefix}nsfw_neko_gif
-├ ${prefix}pussy
-├ ${prefix}feetg
-├ ${prefix}baka
-├ ${prefix}hug
-├ ${prefix}kiss
-├ ${prefix}tickle
-├ ${prefix}spank
-├ ${prefix}kuni
-├ ${prefix}classic
-├ ${prefix}boobs
-├ ${prefix}anal
-├ ${prefix}ngif
-├ ${prefix}cuddle
 ╰❒ ${prefix}zettai
 
 ╭─❒ 「 Ephoto360 Menu 」
@@ -1449,7 +1497,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ╰❒ ${prefix}sound70
 
 ╭─❒ 「 TqTo 」 
-├ My God
+├ Allah Swt
 ├ My Parents
 ├ Fatih A.
 ├ Ferdi
@@ -1457,7 +1505,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ Mhankbarbar
 ├ Nurutomo
 ├ Rashid
-├ Anjarman20
+├ Anjarman20 
 ├ Penyedia Module
 ╰❒ And All Support
     `
@@ -1506,8 +1554,8 @@ Goodbye`
 exports.source = () =>{
 return`*------「 SOURCE CODE 」 ------*
 
-Base : https://github.com/Anjarman200/
-Recode : https://youtube.be/c/Anjarman20
+Base : https://github.com/Anjarman200/Man-Bot-Multi
+Recode : https://youtube.com/c/Anjarman20
 `
 }
 exports.tos = (ownernomer) => {
@@ -1531,7 +1579,6 @@ exports.info = (prefix) =>{
 	return`╭─❒ 「 Bot Info 」 
 ├ ${prefix}owner
 ├ ${prefix}rules
-├ ${prefix}sc
 ├ ${prefix}ping
 ├ ${prefix}runtime
 ├ ${prefix}botstatus
@@ -1590,13 +1637,16 @@ exports.group = (prefix) =>{
 ├ ${prefix}infochat
 ├ ${prefix}setdesk [text]
 ├ ${prefix}setppgrup [reply image]
-├ ${prefix}antilink [on/off]
 ├ ${prefix}revoke
 ├ ${prefix}leave
-├ ${prefix}add [62******]
+├ ${prefix}add [62***]
 ├ ${prefix}kick @tag
 ├ ${prefix}leave
 ├ ${prefix}linkgc
+├ ${prefix}welcome [on/off]
+├ ${prefix}goodbye [on/off]
+├ ${prefix}nsfw [on/off]
+├ ${prefix}antilink [on/off]
 ├ ${prefix}take packname|author
 ├ ${prefix}group [open/close]
 ├ ${prefix}tagall [text]
@@ -1641,6 +1691,8 @@ exports.search = (prefix) =>{
 
 exports.converter = (prefix) =>{
 	return`╭─❒ 「 Converter 」 
+├ ${prefix}emoji [😭]
+├ ${prefix}emojimix [😭+💩]
 ├ ${prefix}toaudio [video]
 ├ ${prefix}tomp3 [video]
 ├ ${prefix}tovn [video]
@@ -1782,83 +1834,76 @@ exports.ranime = (prefix) =>{
 
 exports.nsfw = (prefix) =>{
 	return`╭─❒ 「 Nsfw & Sfw 」
-├ ${prefix}ahegao
-├ ${prefix}ass
-├ ${prefix}bdsm
+├ ${prefix}cuddle
+├ ${prefix}feed
+├ ${prefix}foxgirl
+├ ${prefix}kemonomimi2
+├ ${prefix}woof
+├ ${prefix}holo2
+├ ${prefix}hug
+├ ${prefix}kiss
+├ ${prefix}lizard
+├ ${prefix}meowi
+├ ${prefix}neko2
+├ ${prefix}pat
+├ ${prefix}poke
+├ ${prefix}slap
+├ ${prefix}tickle
+├ ${prefix}baka
+├ ${prefix}smug
+├ ${prefix}neko_sfw
+├ ${prefix}hentai
+├ ${prefix}hentai_gif
+├ ${prefix}spank
 ├ ${prefix}blowjob
+├ ${prefix}cumarts
+├ ${prefix}eroyuri
+├ ${prefix}eroneko
+├ ${prefix}erokemonomimi
+├ ${prefix}erokitsune
+├ ${prefix}ero
+├ ${prefix}feet
+├ ${prefix}erofeet
+├ ${prefix}feetgif
+├ ${prefix}femdom
+├ ${prefix}futanari
+├ ${prefix}hentai
+├ ${prefix}holoero
+├ ${prefix}holo
+├ ${prefix}keta
+├ ${prefix}kitsune
+├ ${prefix}kemonomimi
+├ ${prefix}pussyart
+├ ${prefix}pussywankgif
+├ ${prefix}girl_solo
+├ ${prefix}girl_solo_gif
+├ ${prefix}tits
+├ ${prefix}trap
+├ ${prefix}yuri
+├ ${prefix}avatar2
+├ ${prefix}anal
+├ ${prefix}bj
+├ ${prefix}boobs
+├ ${prefix}classic
+├ ${prefix}cumsluts
+├ ${prefix}kuni
+├ ${prefix}lesbian
+├ ${prefix}neko
+├ ${prefix}neko_gif
+├ ${prefix}ahegao
+├ ${prefix}bdsm
 ├ ${prefix}cuckold
 ├ ${prefix}cum
-├ ${prefix}ero
-├ ${prefix}femdom
 ├ ${prefix}foot
 ├ ${prefix}gangbang
 ├ ${prefix}glasses
 ├ ${prefix}jahy
-├ ${prefix}manga
 ├ ${prefix}masturbation
-├ ${prefix}neko
+├ ${prefix}nsfw_neko
 ├ ${prefix}orgy
 ├ ${prefix}panties
-├ ${prefix}pussy
 ├ ${prefix}tentacles
 ├ ${prefix}thighs
-├ ${prefix}yuri
-├ ${prefix}feet
-├ ${prefix}lewdkemo
-├ ${prefix}woof
-├ ${prefix}gasm
-├ ${prefix}solo
-├ ${prefix}8ball
-├ ${prefix}goose
-├ ${prefix}avatar
-├ ${prefix}hololewd
-├ ${prefix}gecg
-├ ${prefix}holo
-├ ${prefix}fox_girl
-├ ${prefix}tits
-├ ${prefix}eroyuri
-├ ${prefix}holoyero
-├ ${prefix}lizard
-├ ${prefix}keta
-├ ${prefix}eron
-├ ${prefix}erok
-├ ${prefix}kemonomimi
-├ ${prefix}cum_jpg
-├ ${prefix}nsfw_avatar
-├ ${prefix}erofeet
-├ ${prefix}meow
-├ ${prefix}wallpaper
-├ ${prefix}waifu
-├ ${prefix}trap
-├ ${prefix}lewd
-├ ${prefix}pussy_jpg
-├ ${prefix}futanari
-├ ${prefix}lewdk
-├ ${prefix}solog
-├ ${prefix}smug
-├ ${prefix}cum
-├ ${prefix}slap
-├ ${prefix}les
-├ ${prefix}erokemo
-├ ${prefix}bj
-├ ${prefix}pwankg
-├ ${prefix}pat
-├ ${prefix}poke
-├ ${prefix}feed
-├ ${prefix}nsfw_neko_gif
-├ ${prefix}pussy
-├ ${prefix}feetg
-├ ${prefix}baka
-├ ${prefix}hug
-├ ${prefix}kiss
-├ ${prefix}tickle
-├ ${prefix}spank
-├ ${prefix}kuni
-├ ${prefix}classic
-├ ${prefix}boobs
-├ ${prefix}anal
-├ ${prefix}ngif
-├ ${prefix}cuddle
 ╰❒ ${prefix}zettai
 `
 }
@@ -2383,6 +2428,35 @@ exports.storemenu = (prefix) =>{
 ├ ${prefix}kalkulator
 ├ ${prefix}proses
 ╰❒ ${prefix}done
+`
+}
+
+exports.voiceChange = (prefix) =>{
+	return`╭─❒ 「 Voice Change Menu 」
+├ ${prefix}bass
+├ ${prefix}blown
+├ ${prefix}deep
+├ ${prefix}earrape
+├ ${prefix}fast
+├ ${prefix}fat
+├ ${prefix}nightcore
+├ ${prefix}reverse
+├ ${prefix}robot
+├ ${prefix}slow
+├ ${prefix}smooth
+╰❒ ${prefix}tupai
+`
+}
+exports.storagemenu = (prefix) =>{
+	return`╭─❒ 「 Storage Menu 」
+├ ${prefix}addvn
+├ ${prefix}listvn
+├ ${prefix}addimage
+├ ${prefix}listimage
+├ ${prefix}addvideo
+├ ${prefix}listvideo
+├ ${prefix}addstik
+╰❒ ${prefix}liststik
 `
 }
 
