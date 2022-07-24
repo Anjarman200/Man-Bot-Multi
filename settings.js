@@ -8,7 +8,7 @@ global.APIs = {
 
 // Free apikey
 global.APIKeys = {
-	'https://api.zeeoneofc.xyz': 'V11',  // login https://api.zeeoneofc.xyz to get apikey || https://api-alphabot.herokuapp.com
+	'https://api.zeeoneofc.xyz': 'V13',  // login https://api.zeeoneofc.xyz to get apikey || https://api-alphabot.herokuapp.com
 }
 
 // setting 
@@ -30,7 +30,7 @@ global.ownernomerr = "+6281328497520" //nmr wa kalian
 global.thumbnail = "./image/lol.jpg" // ini lol.jpg adalah nama foto di folder image. untuk foto bot
 global.donasi = "./image/donasi.jpg" // foto donasi di folder image
 global.background_welcome="https://telegra.ph/file/90a931648de597820bc08.jpg" // maks size 30kb, agar welcome image nya tdk delay
-global.owner = ["6281328497520","6282146354240","081227459135"]
+global.owner = ["6281328497520","6282146354240","6281227459135"]
 global.packname = '© Man-Bot-Mdོ' //sticker wm ubah
 global.author = 'Di Buat Oleh Anjarman20' //sticker wm ganti nama kalian
 global.sessionName = 'session'
